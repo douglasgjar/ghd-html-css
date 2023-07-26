@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Mídias</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Teste para abrir imagens em vários tamanhos diferentes.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="imagem grande">
+    </picture>
+
+    <h1>Áudio</h1>
+    <audio src="midia/dreamit-tracktribe.mp3" controls autoplay></audio>
+
+    <!--Ou outras maneira-->
+    
+    <audio preload="metadata" controls loop>
+        <source src="midia/dreamit-tracktribe.mp3" type="audio/mpeg">
+        <p>Se essa mensagem aparecer, provavelmente algo deu errado. <a href="midia/dreamit-tracktribe.mp3">Clique aqui para baixar o áudio.</a></p>
+    </audio>
+</body>
+</html>

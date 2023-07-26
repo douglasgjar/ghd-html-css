@@ -1,0 +1,195 @@
+@charset "UTF 8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'iDroid';   
+    src: url(/pacote-projeto-d010/fontes/idroid.otf);
+}
+
+:root {
+    --cor-principal: rgb(2, 85, 2);
+    --cor-secundaria: rgb(95, 150, 95);
+    --cor-terciaria: rgb(162, 213, 162);
+    --cor-quartenaria: rgb(242, 242, 242);
+    --cor-quintenaria: rgb(1, 28, 1);
+    --cor-efeito: rgb(26, 255, 0);
+    --font-padrao: 'Montserrat', sans-serif;
+    --font-secundaria: 'iDroid';
+    --fonte-terciaria: Arial, Verdana, Helvetica, sans-serif;  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-secundaria);
+    font-family: var(--font-padrao);
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+    height: 11em;;
+    width: 100%;
+    background-image: linear-gradient(var(--cor-secundaria), var(--cor-principal));
+    color: var(--cor-quartenaria);
+    box-shadow: 0 2px 4px rgba(0, 100, 0, 0.726);
+}
+
+#cabecalho-titulo {
+    padding: 0.5em 0 0;
+    text-shadow: 2px 2px 2px rgba(0, 100, 0, 0.344);
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#cabecalho-subtitulo {
+    padding: 1.5em;
+    text-shadow: 2px 2px 2px rgba(0, 100, 0, 0.344);
+}
+
+.cabecalho-menu {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.cabecalho-menu-links {
+    color: var(--cor-quartenaria);
+    padding: 0.5em;
+    font-weight: bold;
+    font-size:0.8em;
+    text-shadow: 2px 2px 2px rgba(0, 100, 0, 0.344);
+    text-decoration: none;
+}
+
+.cabecalho-menu-links:hover {
+    background-color: var(--cor-secundaria);
+    
+    color: var(--cor-quintenaria);
+}
+
+main {
+    min-width: 300px;    
+    max-width: 1000px;
+    margin: auto auto 1.5em;
+    background-color: var(--cor-quartenaria);
+    box-shadow: 0 0 10px rgba(0, 100, 0, 0.726);
+    padding: 1.5em 1.5em 0;
+    border-radius: 0 0 10px 10px;
+}
+
+main img {
+    width: 100%;
+}
+
+#imagem_pequena {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+#home-principal-titulo {
+    font-family: var(--font-secundaria);
+    font-size: 1.7em;
+    padding-bottom: 0.2em;
+    text-align: left;
+    color: var(--cor-principal);
+    text-align: left;
+}
+
+.home-principal-subtitulo {
+    font-family: var(--font-secundaria);
+    text-align: left;
+    padding: 0.2em;
+    color: var(--cor-principal);
+    background-image: linear-gradient(to right, var(--cor-terciaria),var(--cor-quartenaria));
+}
+
+.home-principal-paragrafo {
+    padding: 0.5em;
+    font-size: 1em;
+    line-height: 1.2em;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.home-principal-destaque {
+    color: var(--cor-principal); 
+}
+
+.home-principal-linkexterno {
+    text-decoration: none;
+    background-color: var(--cor-terciaria);
+    padding: 0.05em;
+    border-radius: 2px;
+}
+
+.home-principal-linkexterno:hover {
+    color: var(--cor-quartenaria);
+    text-decoration: underline;
+}
+
+
+#espaco-video {
+    padding: 1em;
+    padding-bottom: 40%;
+    margin: 0 -24px;
+    background-color: var(--cor-principal);
+    position: relative;
+}
+
+#video {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#home-secundario {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 0 0.5em;
+}
+
+#home-secundario-box {
+    padding: 0.5em 1.5em 1em ;
+    background-color: var(--cor-terciaria);
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.185);
+}
+
+#home-secundario-titulo {
+    background-color: var(--cor-principal);
+    color: var(--cor-quartenaria);
+    padding: 0.5em;
+    margin-top: 1em;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.308);
+}
+
+#home-secundario-listas {
+    display: flex;
+    gap: 20%;
+    padding: 1em;
+}
+
+.home-secundario-paragrafo {
+    padding: 0.5em 0 1em;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--cor-principal);
+    font-size: 0.7em;
+    color: var(--cor-quartenaria);
+}
