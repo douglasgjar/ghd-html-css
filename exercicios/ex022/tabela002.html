@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 02</title>
+    <style>
+        table {
+            width: 500px;
+            border: solid black 1px;
+            border-collapse: collapse;
+        }
+
+        th {
+            height: 25px;
+            border: solid black 1px;
+            background-color: gray;
+            color: white;
+            padding: 5px;
+        }
+
+        td {
+            border: solid black 1px;
+            height: 5px;
+            padding: 5px;
+        }
+
+        .posicao{
+            text-align: center;
+        }
+        .numero{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--Anatomia para tabelas Grandes
+    TABLE
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH-->
+    <table>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="posicao">1</td>
+                <td>São Paulo</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td class="posicao">2</td>
+                <td>Minas Gerais</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+            <tr>
+                <td class="posicao">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 264 943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <th>Total de Habitantes</th>
+                <th class="numero"><strong>84 352 783</strong></th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
