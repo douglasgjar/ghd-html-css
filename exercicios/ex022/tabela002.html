@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela 02</title>
     <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
         table {
             width: 500px;
             border: solid black 1px;
             border-collapse: collapse;
+        }
+        
+        caption {
+            font-size: 1.5em;
+            padding: 5px;
+            font-weight: bold;
+            background-color: lightgray;
         }
 
         th {
@@ -25,11 +36,16 @@
             padding: 5px;
         }
 
-        .posicao{
-            text-align: center;
-        }
         .numero{
             text-align: right;
+        }
+
+        /* 2n = de 2 em 2 ele cria uma tarja
+        3n 3 tarjas, 4n... 
+        
+        ou podemos utilizar tr:nth-child(odd) para ímpares e tr:nth-child(even) para pares*/
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -37,6 +53,7 @@
     <h1>Uso de Tabelas Grandes</h1>
     <!--Anatomia para tabelas Grandes
     TABLE
+        CAPTION ou LEGENDA
         THEAD
             TR, TD, TH
         TBODY
@@ -44,35 +61,31 @@
         TFOOT
             TR, TD, TH-->
     <table>
+        <caption>População dos Estados do Brasil</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 150px;">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="posicao">1</td>
                 <td>São Paulo</td>
                 <td class="numero">45 919 049</td>
             </tr>
             <tr>
-                <td class="posicao">2</td>
                 <td>Minas Gerais</td>
                 <td class="numero">21 168 791</td>
             </tr>
             <tr>
-                <td class="posicao">3</td>
                 <td>Rio de Janeiro</td>
                 <td class="numero">17 264 943</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td></td>
-                <th>Total de Habitantes</th>
-                <th class="numero"><strong>84 352 783</strong></th>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero"><strong>84 352 783</strong></th>
             </tr>
         </tfoot>
     </table>
