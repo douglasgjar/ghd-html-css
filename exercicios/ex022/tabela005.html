@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabela</title>
+</head>
+<style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    table {
+        width: 500px;
+        border-collapse: collapse;
+    }
+
+    caption {
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    .sexandage {
+        text-align: center;
+    }
+
+    .cnome{
+        background-color: aqua;
+    }
+    .csex{
+        background-color: red;
+    }
+    .cidade{
+        background-color: gainsboro;
+    }
+    .cprofissao{
+        background-color: bisque;
+    }
+</style>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csex">
+            <col class="cidade">
+            <col class="cprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão
+            </th>
+        </tr>
+        <tr>
+            <td>Paula</td>
+            <td class="sexandage">F</td>
+            <td class="sexandage">54</td>
+            <td>Diretora Financeira</td>
+        </tr>
+        <tr>
+            <td>Douglas</td>
+            <td class="sexandage">M</td>
+            <td class="sexandage">25</td>
+            <td>Dev Front-End</td>
+        </tr>
+        <tr>
+            <td>Thayná</td>
+            <td class="sexandage">F</td>
+            <td class="sexandage">27</td>
+            <td>Psicóloga</td>
+        </tr>
+        <tr>
+            <td>Daniel</td>
+            <td class="sexandage">M</td>
+            <td class="sexandage">26</td>
+            <td>Dev Full-Stack</td>
+        </tr>
+    </table>
+</body>
+</html>
