@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        iframe{
+            width: 100%;
+            border: 1px solid black;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <ul style="display: flex; justify-content: flex-start ; gap: 10px; padding: 2px; list-style: none;">
+        <li><a href="paginas-extras/page001.html" target="frame">Página 1</a></li>
+        <li><a href="paginas-extras/page002.html" target="frame">Página 2</a></li>
+        <li><a href="paginas-extras/page003.html" target="frame">Página 3</a></li>
+    </ul>
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At itaque eos voluptatum autem tempora assumenda sapiente quia, aut nemo beatae aliquid harum maiores natus enim magni unde necessitatibus. Adipisci, voluptas.</p>" name="frame">
+        <p>[Seu navegador não é compatível]</p>
+    </iframe>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo inventore optio quae ullam laborum alias nisi, beatae dignissimos est nobis odit rerum doloremque dolores praesentium animi, atque sapiente aspernatur iusto.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure minus perspiciatis inventore illo, dolorum suscipit impedit iste sed ut neque dignissimos blanditiis mollitia obcaecati pariatur facilis, ad corporis nam consectetur?</p>
+</body>
+</html>
